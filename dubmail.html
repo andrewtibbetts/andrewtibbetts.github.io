@@ -1,0 +1,63 @@
+	<div id="Scontainer">
+
+		<header class="s_header">
+
+			<div class="s_header-logo">Dubmail</div><input class="s_header-search" id="sneakySearch" type="text" placeholder="start here...">
+
+		</header>
+
+		<aside class="s_sidebar">
+
+			<button class="s_sidebar-compose_button" onclick="dubMail.hide()">Compose</button><br>
+
+			<div class="s_sidebar_meta">
+
+				<h2 class="s_sidebar_meta-title">Folders</h2>
+
+				<ul class="meta_list meta_list-folders">
+ 
+					<li class="meta_list-item"><a class="meta_list-link meta_list-link-inbox" onclick="dubMail.toggleInbox()" style="background-position: 0px -18px" href="#">Inbox</a></li>
+
+					<li class="meta_list-item"><a class="meta_list-link meta_list-link-spam" style="background-position: 0px -73px" href="#">Spam (13)</a></li>
+
+					<li class="meta_list-item"><a class="meta_list-link meta_list-link-deleted" style="background-position: 0px -91px" href="#">Deleted</a></li>
+
+					<li class="meta_list-item"><a class="meta_list-link meta_list-link-djname" id="sneakyDJ">DJ Name</a></li>
+
+					<li class="meta_list-item"><a class="meta_list-link meta_list-link-artist" id="sneakyArtist" href="#">Artist</a></li>
+
+					<li class="meta_list-item"><a class="meta_list-link meta_list-link-track" id="sneakyTrack" href="#">Track</a></li>
+
+					<li class="meta_list-item"><a class="meta_list-link meta_list-link-favorites" id="sneakyFav" onclick="dubMail.toggleQueue()" href="#">Favorites</a></li>
+
+				</ul>
+				
+				<h2 class="s_sidebar_meta-title">Contacts</h2>
+
+				<ul class="meta_list meta_list-contacts" id="peopleHere"></ul>
+  
+			</div>
+
+		</aside>
+
+		<section class="s_main">
+
+			<div class="sneakyMail">
+				<div class="sneakyName">
+					FROM
+				</div>
+
+				<div class="sneakySubject">
+					SUBJECT
+				</div>
+			</div>
+
+			<div id="sneakyInbox"></div>
+
+			<div id="sneakyQueue"></div>
+
+		</section>
+ 
+	</div>
+	
+	<div id="sneakyPM"></div>
